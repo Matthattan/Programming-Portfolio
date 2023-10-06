@@ -15,3 +15,6 @@ Collection of Python Projects to measure progress
 
 **05/10**
 - Temperature Converter for Celsius, Fahrenheit and Kelvin
+
+**06/10**
+- Hangman with 20 words to guess from
