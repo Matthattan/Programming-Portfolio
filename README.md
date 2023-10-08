@@ -20,4 +20,7 @@ Collection of Python Projects to measure progress
 - Hangman with 20 words to guess from
 
 **07/10**
-- Madlib generator with 3 stories and various types of words to choose for. Could be improved with more appropriate use of classes/objects. May revisit this project 
+- Madlib generator with 3 stories and various types of words to choose for. Could be improved with more appropriate use of classes/objects. May revisit this project
+
+**08/10**
+- Binary Search. Works with numbers and may be updated in future 
