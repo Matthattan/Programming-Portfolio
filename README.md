@@ -24,3 +24,6 @@ Collection of Python Projects to measure progress
 
 **08/10**
 - Binary Search. Works with numbers and may be updated in future 
+
+**09/10**
+- Minesweeper. 10x10 Grid 
