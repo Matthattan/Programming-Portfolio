@@ -26,4 +26,7 @@ Collection of Python Projects to measure progress
 - Binary Search. Works with numbers and may be updated in future 
 
 **09/10**
-- Minesweeper. 10x10 Grid 
+- Minesweeper. 10x10 Grid
+
+**10/10**
+- GUI Calculator. Uses Tkinter and OOP for a more nicer interface
