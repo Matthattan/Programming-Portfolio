@@ -1,7 +1,7 @@
-# Python-Portfolio
-Collection of Python Projects to measure progress
+# Programming-Portfolio
+Collection of Programming Projects to measure progress
 
-## October
+## October - Python
 
 **02/10**
 - Learning to use Github Desktop and Pull Requests.
@@ -46,3 +46,6 @@ Collection of Python Projects to measure progress
 
 **15/10**
 - File Handling and Folder creation. Creating, Reading, Writing and Appending to Files.
+
+## November - Javascript
+### Coming Soon
