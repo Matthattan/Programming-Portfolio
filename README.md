@@ -30,3 +30,6 @@ Collection of Python Projects to measure progress
 
 **10/10**
 - GUI Calculator. Uses Tkinter and OOP for a more nicer interface
+
+**11/10**
+- Sorting Alogrithms: Merge Sort, Bubble Sort and Insertion Sort. I plan on refactoring this soon.
