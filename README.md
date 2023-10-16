@@ -37,7 +37,6 @@ Collection of Programming Projects to measure progress
 **12/10**
 - QR Code generator that receives user input to create a QR Code to a website.
 
-
 **13/10**
 - Banking System which uses OOP to create users, withdraw money, deposit money and display balance.
 
@@ -46,6 +45,9 @@ Collection of Programming Projects to measure progress
 
 **15/10**
 - File Handling and Folder creation. Creating, Reading, Writing and Appending to Files.
+
+**16/10**
+- Password Manager - uses cryptography module to store, encrypt and view password
 
 ## November - Javascript
 ### Coming Soon
