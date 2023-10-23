@@ -49,5 +49,8 @@ Collection of Programming Projects to measure progress
 **16/10**
 - Password Manager - uses cryptography module to store, encrypt and view password
 
+**17/10**
+- Pygame Part 1
+
 ## November - Javascript
 ### Coming Soon
