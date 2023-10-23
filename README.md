@@ -50,7 +50,50 @@ Collection of Programming Projects to measure progress
 - Password Manager - uses cryptography module to store, encrypt and view password
 
 **17/10**
-- Pygame Part 1
+- Pygame (1)
+  - background
+  - sprites
+
+**18/10**
+- Pygame (2)
+  - border
+  - movement
+
+**19/10**
+- Pygame (3)
+  - score
+  - winner
+  - final details
+
+**20/10**
+- List Comprehension (1)
+  - Introduction to List Comp
+
+**21/10**
+- List Comprehension (2)
+  - Using If statements in List Comp
+    - Ternery Expression
+    - Filtering Conditions
+
+**22/10**
+- List Comprehension (3)
+  - Comparing Map to List Comp
+    - Features
+    - Speed
+    - Lambdas
+
+**23/10**
+- List Comprehension (5)
+  - Comparing Filter to List Comp
+    - Features
+    - Speed
+    - Lambdas
+- List Comprehension (4)
+  - Comparing Reduce to List Comp
+    - Features
+    - Speed
+    - Lambdas
+    - Limitations
 
 ## November - Javascript
 ### Coming Soon
