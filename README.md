@@ -95,5 +95,33 @@ Collection of Programming Projects to measure progress
     - Lambdas
     - Limitations
 
+**24/10**
+- See Below
+
+**25/10**
+- List Comprehension (6)
+  - Dictionary Comprehension
+    - Range function
+    - from a List
+    - Ternery Expression 
+    - Filter Condition
+- List Comprehension (7)
+  - List Comprehension with multiple FOR Loops
+    - Understanding the order of FOR operations
+    - multiple lists of different amounts
+    - different data sets within a list
+    - Flatten nested lists
+- List Comprehension (8)
+  - 3 Ways to print Lists
+    - Print inside list comp
+    - Print outside list comp
+    - Print inside list comp with OR
+- List Comprehension (9)
+  - List Comprehension vs Generators
+    - Speed
+    - Memory
+    - Purpose
+    - Drawbacks
+
 ## November - Javascript
 ### Coming Soon
