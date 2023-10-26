@@ -123,5 +123,16 @@ Collection of Programming Projects to measure progress
     - Purpose
     - Drawbacks
 
+**26/10**
+- List Comprehension (10)
+  - Understanding why there is no list comprehension for Tuples
+    - Alternatives
+- List Comprehension (11)
+  - Set Comprehension
+- List Comprehension (12)
+  - Enumerate
+- List Comprehension (13)
+  - Different ways to error handle
+
 ## November - Javascript
 ### Coming Soon
