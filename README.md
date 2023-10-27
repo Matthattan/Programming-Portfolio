@@ -134,5 +134,13 @@ Collection of Programming Projects to measure progress
 - List Comprehension (13)
   - Different ways to error handle
 
+**27/10**
+- List Comprehension (14)
+  - How to handle unused variables
+- List Comprehension (15)
+  - How to remove empty lists/false-y values inside lists
+- List Comprehension (16)
+  - How to check if a List is empty
+
 ## November - Javascript
 ### Coming Soon
