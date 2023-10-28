@@ -142,5 +142,13 @@ Collection of Programming Projects to measure progress
 - List Comprehension (16)
   - How to check if a List is empty
 
+**28/10**
+- Numpy (1)
+  - The Basics
+- Numpy (2)
+  - Modifying Array
+- Numpy (3)
+  - Initializing Different Arrays
+
 ## November - Javascript
 ### Coming Soon
