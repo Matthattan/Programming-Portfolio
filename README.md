@@ -150,5 +150,13 @@ Collection of Programming Projects to measure progress
 - Numpy (3)
   - Initializing Different Arrays
 
+**29/10**
+- Numpy (4)
+  - Mathematics
+- Numpy (5)
+  - Reorganizing Array
+- Numpy (6)
+  - Index Challenge
+
 ## November - Javascript
 ### Coming Soon
