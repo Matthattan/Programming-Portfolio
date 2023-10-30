@@ -150,5 +150,23 @@ Collection of Programming Projects to measure progress
 - Numpy (3)
   - Initializing Different Arrays
 
+**29/10**
+- Numpy (4)
+  - Mathematics
+- Numpy (5)
+  - Reorganizing Array
+- Numpy (6)
+  - Index Challenge
+
+**30/10**
+- Webscraping (1)
+  - The basics of accessing and modifying elements on a HTML website
+- Webscraping (2)
+  - Accessing real-life websites and searching for values (no longer possible)
+- Webscraping (3)
+  - Finding different tags and multiple tags at once
+- Webscraping (4)
+  - Modifying then Pasting HTML into different files
+
 ## November - Javascript
 ### Coming Soon
