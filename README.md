@@ -168,6 +168,10 @@ Collection of Programming Projects to measure progress
 - Webscraping (4)
   - Modifying then Pasting HTML into different files
 
+**31/10**
+- Webscraping (5)
+  - Accessing values inside, after and before tags
+  - Happy Halloween! 🎃🦇
 
 ## November - Javascript
 ### Coming Soon
