@@ -174,4 +174,7 @@ Collection of Programming Projects to measure progress
   - Happy Halloween! 🎃🦇
 
 ## November - Javascript
-### Coming Soon
+
+**1/9**
+- Variables and Constants
+- Basic Math Operations
