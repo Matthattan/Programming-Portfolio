@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Implement VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <h1> Hello World! ; &rbrack;</h1>
+    <div id="app">
+        <div v-if=showBooks>
+            <h2>{{title}} - {{author}} - {{age}}</h2>
+        </div>
+        <button v-on:click="age++">Increase Age</button>
+        <button v-on:click="age--">Decrease Age</button>
+        <!--@click is the same as v-on:click-->
+        <div @click="changeTitle('Divergent')">Change Book Title</div>
+        <button @click="toggleShowBooks">
+            <!-- if statements take out the element from the page-->
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+        </button>
+        <!-- v-show uses css to display/hide the element-->
+        <div v-show="showBooks">currently showing books</div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
