@@ -178,3 +178,11 @@ Collection of Programming Projects to measure progress
 **1/9**
 - Variables and Constants
 - Basic Math Operations
+
+**2/9**
+Jumping the gun on this one
+- Vue (1)
+  - installing vue
+  - v-on events
+  - if statements
+  - creating apps
