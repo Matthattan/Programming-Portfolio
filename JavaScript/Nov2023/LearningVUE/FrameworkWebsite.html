@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Implement VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        body {
+            background-color: lightgray;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+
+        p, h3, ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            background: grey;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li.fav {
+            background: yellow;
+        }
+
+        li img{
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> Hello World! ; &rbrack;</h1>
+    <div id="app">
+        <!--Attribute binding-->
+
+        <a v-bind:href="url">best website ever</a>
+        <div v-if=showBooks>
+            <ul>
+                <!-- Dynamically showing every title and author in books using v-for -->
+                <!-- Dynamic classes-->
+                <li v-for="book in filteredApps" :class="{fav: book.isFav}" @click="favouriteItem(book)">
+                    <img :src="book.img" :alt="book.title">
+                    <h3>{{book.title}}</h3>
+                    <h3>{{book.date}}</h3>
+                </li>
+            </ul>
+        </div>
+        <!--@click is the same as v-on:click-->
+        <div @click="changeColor()">Click Me!</div>
+        <button @click="toggleShowBooks">
+            <!-- if statements take out the element from the page-->
+            <span v-if="showBooks">Hide Profiles</span>
+            <span v-else>Show Profiles</span>
+        </button>
+        <!-- v-show uses css to display/hide the element-->
+        <div v-show="showBooks">currently showing books</div>
+        <br>
+        <!-- Other Mouse Events -->
+        <div class="box" v-on:mouseover="handleEvent">Mouseover</div>
+        <div class="box" @mouseleave="handleEvent($event, 'Hello World!')">Mouseleave</div>
+        <div class="box" @dblclick="handleEvent">doubleclick</div>
+        <div class="box" @mousemove="handleMouseMove">position - {{x}} {{y}}</div>
+    </div>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
