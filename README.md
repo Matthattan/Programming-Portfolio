@@ -186,3 +186,10 @@ Jumping the gun on this one
   - v-on events
   - if statements
   - creating apps
+
+**4/9**
+- Vue (2)
+  - Click Events
+  - Dynamic Classes
+  - For Loop
+  - Computed modules (relying on other data)
