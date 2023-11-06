@@ -16,8 +16,8 @@ BLUE = (0, 0, 255,)
 
 BORDER = pygame.Rect(WIDTH//2 - 5, 0, 10, HEIGHT)
 
-bulletHitSound = pygame.mixer.Sound(os.path.join('GameInPython/Assets', 'Grenade+1.mp3'))
-bulletFireSound = pygame.mixer.Sound(os.path.join('GameInPython/Assets', 'Gun+Silencer.mp3'))
+bulletHitSound = pygame.mixer.Sound(os.path.join('Python-Portfolio/Python/Oct2023/GameInPython/Assets', 'Grenade+1.mp3'))
+bulletFireSound = pygame.mixer.Sound(os.path.join('Python-Portfolio/Python/Oct2023/GameInPython/Assets', 'Gun+Silencer.mp3'))
 
 healthFont = pygame.font.SysFont('papyrus', 40)
 WinnerFont = pygame.font.SysFont('jokerman', 100)
@@ -33,12 +33,12 @@ RSPACESHIP_WIDTH, RSPACESHIP_HEIGHT = 55, 40
 yellowHit = pygame.USEREVENT + 1
 redHit = pygame.USEREVENT + 2
 
-YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join('GameInPython\Assets', 'spaceship_yellow.png'))
+YELLOW_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Python-Portfolio/Python/Oct2023/GameInPython\Assets', 'spaceship_yellow.png'))
 YELLOW_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(YELLOW_SPACESHIP_IMAGE, (YSPACESHIP_WIDTH, YSPACESHIP_HEIGHT)), 90)
-RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join('GameInPython\Assets', 'spaceship_red.png'))
+RED_SPACESHIP_IMAGE = pygame.image.load(os.path.join('Python-Portfolio/Python/Oct2023/GameInPython\Assets', 'spaceship_red.png'))
 RED_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(RED_SPACESHIP_IMAGE, (RSPACESHIP_WIDTH, RSPACESHIP_HEIGHT)), 270)
 
-SPACE = pygame.transform.scale(pygame.image.load(os.path.join('GameInPython\Assets', 'space.png')), (WIDTH, HEIGHT))
+SPACE = pygame.transform.scale(pygame.image.load(os.path.join('Python-Portfolio/Python/Oct2023/GameInPython\Assets', 'space.png')), (WIDTH, HEIGHT))
 
 spaceshipWidth, spaceshipHeight = 55, 40
 
