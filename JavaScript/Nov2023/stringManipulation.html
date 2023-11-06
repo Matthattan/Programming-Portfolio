@@ -1,0 +1,57 @@
+<script>
+    // anything in quotes (double or single) counts as a string
+    var username = "Matthattan";
+
+    // Strings may contain quotes that can break code without using escape characters
+    // backslashes can be used as an escape character
+    var innerQuote = "This \"Works\"";
+
+    // using single quote pairs with double quote strings (or vice versa) also works
+    var anotherInnerQuote = "This also 'works' ";
+
+    // other characters you can escape from include
+    /*
+    \\ backslash
+    \n newline
+    \r carriage return
+    \t tab
+    \b backspace
+    \f form feed    
+    */
+
+    var escapeNewline = "\\n can be used to start a new line";
+
+    // Strings can be concatenated; joined together
+    var website = "Github";
+    var platform = username + website;
+
+    // Concatenation can also happen with += to avoid repeating
+    name += website;
+
+    // Concat is possible with variables
+    var profile = name + " with JavaScript";
+
+    // You can find the length of a string using .length method
+    var Studio = "VisualStudioCode";
+    var studioChars = Studio.length;
+
+    // Bracket Notation can be used to retrieve a character at a specified position
+    // Counting/Indexing starts at 0
+    var firstLetter = Studio[0];
+    var secondLetter = Studio[1];
+
+    // Strings are immutable - you cannot change the characters inside the string
+    // Studio[2] = "d" would return an error
+
+    // To use bracket notation in reverse, use the length method
+    // subtract however many characters you want to go back by
+    lastChar = Studio[Studio.length - 1];
+
+    
+
+
+
+
+
+
+</script>
