@@ -1,0 +1,45 @@
+<script>
+    // Functions allow for code to be reusable by acting as a module (separate piece) in a program
+    function addTwoNumbers(a, b) {
+        return a + b
+    }
+    // a and b are parameters which show the position that values passed into the function should be
+    // when passing actual values into a function, they're called arguments
+    console.log(addTwoNumbers(3, 6))
+
+    // Global scope refers to variables that are accessable throughout a program
+    // Local scope refers to variables that are accessible only in a particular function
+
+    function subtractTwoNumbers(c, d) {
+        var total = c - d
+        return total
+    }
+
+    // This code wont work because total was declared in a function
+    // console.log(total) 
+    console.log(subtractTwoNumbers(10, 7))
+
+    // You can make a function-bound variable global scope by removing the variable keyword such as var
+    function multiplyTwoNumbers() {
+        total =  5 * 7
+    }
+
+    console.log(total)
+    // If you use a variable in the local scope of a function where it was previous used in the global scope
+    // The variable will take on the value of global scope
+
+    var forename = "Ben"
+
+    function returnName() {
+        var forename = "James"
+        return forename
+    }
+
+    console.log(forename) // returns Ben
+
+    // return is used to assign an expression inside a function inside of it so it can be processed
+    // e.g. to print out later on
+
+    // returning a value isn't always necessary
+    // not doing so may return an undefined value instead    
+</script>

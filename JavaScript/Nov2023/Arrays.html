@@ -1,0 +1,33 @@
+<script>
+    // Arrays allow for values to be stored
+    // You can have values of different types in arrays
+    var Profile = ["John", 1992, true]
+
+    // a Nested array is an array inside another array
+    var shoppinglist = [["Can of Beans", "Can of Tuna"], ["Crisp Packet"], ["Cat Food", "Dog Food"]]
+
+    // Bracket notation can be used to access values in a list
+    console.log(Profile[1]) // Prints John
+
+    // Array Indexes can be used to modify array - they are mutable
+    shoppinglist[1] = "Chocolate Bar"
+    console.log(shoppinglist) // Crisp Packet is replaced by Chocolate Bar
+
+    // To access multi-dimensional/nested arrays you can also use indexes
+    shoppinglist[0][1] = "Can of Peas"
+    console.log(shoppinglist) // Can of Tuna is replaced by Can of Peas
+
+    // Data can be appended to the end of an array using the push function
+    shoppinglist.push(["Ice Cream","Fish Fingers"])
+
+    // Data can be removed from an array using the pop function
+    var latestItem = shoppinglist.pop()
+    console.log(latestItem) // "Ice Cream","Fish Fingers"
+
+    // The shift function removes the first item instead of the last
+    var oldestItem = shoppinglist.shift()
+    console.log(oldestItem) // "Can of Beans", "Can of Tuna"
+
+    // The un-shift function adds an item to the beginning of an array
+    shoppinglist.shift(oldestItem)
+</script>

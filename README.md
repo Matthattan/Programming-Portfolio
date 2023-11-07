@@ -175,11 +175,11 @@ Collection of Programming Projects to measure progress
 
 ## November - Javascript
 
-**1/9**
+**1/11**
 - Variables and Constants
 - Basic Math Operations
 
-**2/9**
+**2/11**
 Jumping the gun on this one
 - Vue (1)
   - installing vue
@@ -187,9 +187,25 @@ Jumping the gun on this one
   - if statements
   - creating apps
 
-**4/9**
+**4/11**
 - Vue (2)
   - Click Events
   - Dynamic Classes
   - For Loop
   - Computed modules (relying on other data)
+
+**6/11**
+- Variables
+- Strings
+  - Index Notation
+  - Escape characters
+
+**7/11**
+- Arrays
+  - Accessing items
+  - Nested Arrays
+  - Push, Pop, Shift, Unshift
+- Functions
+  - Global vs Local scope
+  - Arguments and Parameters
+  - Returning values
