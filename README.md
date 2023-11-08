@@ -209,3 +209,11 @@ Jumping the gun on this one
   - Global vs Local scope
   - Arguments and Parameters
   - Returning values
+
+**8/11**
+- If Statements
+  - Else/ElseIf
+  - Returning Values
+  - Equality/Inequality/Greater than/Less than operators
+  - OR and AND
+  - Switch Case
