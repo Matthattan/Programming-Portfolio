@@ -1,0 +1,126 @@
+<script>
+    // Boolean is a data type that has two states: True or False
+    // You can use this to represent the status of something
+
+    // An if statement checks a condition and runs the code inside if its true
+    // An else can be attached at the end of an if statement as an alternative statement if the condition is not met
+
+    // the equality operator ( == ) is used to check if an two expressions are the same
+    function isEven(a) {
+        if (a % 2 == 0){
+            return true // number is even
+        } else {
+            return false // number is odd
+        }
+    }
+
+    console.log("8 is an even number is " + isEven(8))
+    console.log("5 is an even number is " + isEven(5))
+
+    // strict equality ( === ) is used to check if two values are the exact same
+    // JavaScript is lenient on how different values are handles as different types so there can be a major difference
+    function isTheSame(a, b) {
+        if (a === b) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    function isTheSame2(a, b) {
+        if (a == b) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    console.log(isTheSame(1, true)) //returns false
+    console.log(isTheSame2(1, true)) //returns true
+
+    // The inequality operator checks if two values are not the same
+    function isNotTheSame(a) {
+        if (a != 10) {
+            return "Values do not match"
+        } else {
+            return "Values match"
+        }
+    }
+
+    // like string equality, inequality has a more stricter way of checking values as is 
+    function isNotTheSame2(a) {
+        if (a != 10) {
+            return "Values do not match"
+        } else {
+            return "Values match"
+        }
+    }
+
+    console.log(isNotTheSame(10)) // match
+    console.log(isNotTheSame(5)) // no match
+    console.log(isNotTheSame("10")) // match
+    console.log(isNotTheSame2("10")) // no match
+
+    // Greater than and Less than are also operators we can use to comapare values
+    function greaterThanTen(a) {
+        if (a > 10) {
+            return a + "is greater than 10"
+        } else if (a < 10) {
+            return a + "is lower than 10"
+        } else {
+            return a + "is the same as 10"
+        }
+    }
+
+    console.log(greaterThanTen(12)) // greater than 10
+    console.log(greaterThanTen(8)) // lower than 10
+
+    // You can check if two conditions are true at the same time with AND or &&
+    function biggerThanTen(a, b) {
+        if (a > 10 && b > 10) {
+            return "Both values are greater than 10"
+        }
+        return "Atleast one value is not greater than 10"
+    }
+
+    console.log(biggerThanTen(20,11))
+    console.log(biggerThanTen(8,12))
+
+    // You can check if at least one condition is true using OR or ||
+    function orComparison(a,b) {
+        if (a > b || a == b) {
+            return a + " is greater than or equal to " + b
+        } else {
+            return a + " is less than " + b
+        }
+    }
+
+    console.log(orComparison(6,5))
+
+    // Using a long chain of if-else statements can become inefficient and unreadable
+    // For this reason, switch statements become more viable
+
+    function pizzaOrder(a) {
+        switch (a) {
+            case 1:
+                return "Pepperoni Pizza"
+                break;
+            case 2:
+                return "Sausage Pizza"
+                break;
+            case 3:
+                return "Cheese Pizza"
+                break;
+            case 4:
+                return "Chicken Pizza"
+                break;
+            default:
+                return "Invalid Pizza Order"
+                break;
+        }
+    }
+
+    console.log(pizzaOrder(4))
+
+
+</script>
