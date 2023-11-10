@@ -217,3 +217,10 @@ Jumping the gun on this one
   - Equality/Inequality/Greater than/Less than operators
   - OR and AND
   - Switch Case
+
+**10/11**
+- Objects
+  - Creating Objects
+  - Accessing Objects & Properties
+  - Changing Properties
+  - Nested Objects
