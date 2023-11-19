@@ -224,3 +224,12 @@ Jumping the gun on this one
   - Accessing Objects & Properties
   - Changing Properties
   - Nested Objects
+
+**11/11 - 18/11**
+- break
+
+**19/11**
+- Loops
+  - While Loop
+  - For Loop
+  - Do While Loop
