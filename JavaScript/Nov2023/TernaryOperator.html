@@ -1,0 +1,27 @@
+<script>
+    // The Ternary Operator allows for more compact conditional processing
+
+    var a = true
+    var b = "Hello"
+    var c = "World"
+
+    // Without Ternary Operator - If Else Statement
+
+    if (a) {
+       print(b) 
+    } else {
+        print(c)
+    }
+
+    // if A is true, do b
+    console.log(a?b:c)
+    a = false
+    // else, do c 
+    console.log(a?b:c) 
+
+    // Ternary Operators can be nested, similarly to If Else Statements
+
+    // prints World
+    console.log(a?b:c=="Hello"?b:c)
+
+</script>

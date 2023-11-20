@@ -233,3 +233,10 @@ Jumping the gun on this one
   - While Loop
   - For Loop
   - Do While Loop
+
+**20/11**
+- Random Numbers
+  - Integers
+  - Floating Point Numbers
+- Ternery Operator
+  - Nested Ternary Operator
