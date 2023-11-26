@@ -240,3 +240,8 @@ Jumping the gun on this one
   - Floating Point Numbers
 - Ternery Operator
   - Nested Ternary Operator
+
+**26/11**
+- Classes
+  - Creating Objects with Classes
+  - Getters and Setters

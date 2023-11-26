@@ -1,0 +1,54 @@
+<script>
+    // JS Has access to Classes
+    // Which allow objects to be created based on a template of functions (methods) and variables (properties)
+    
+    class SpaceShuttle {
+        constructor(targetPlant, galaxy, miles){
+            this.targetPlant = targetPlant,
+            this.galaxy = galaxy,
+            this.miles = miles
+        }
+    };
+
+    var apollo45 = new SpaceShuttle("Mars","Milky Way", "620000");
+
+    console.log(apollo45.galaxy);
+
+    // Getters & Setters are used to obtain and assert values to an object when created to a class, respectively
+
+    class Vegetable {
+        constructor(_name, _size, _colour){
+            this._name = _name,
+            this._size = _size,
+            this._colour = _colour
+        }
+
+        // The get keyword is used to obtain a private value of a class without the user directly interacting with the class
+        get vegName(){
+            return this._name
+        }
+
+        // The set keyword allows for values to be updated without the user directly accessing the class
+        set vegCol(newColour){
+            this._colour = newColour
+        }
+
+        get vegCol(){
+            return this._colour
+        }
+    };
+
+    var Carrot = new Vegetable("Carrot", 6.7, "Orange")
+
+    console.log(Carrot.vegName)
+    // setting the colour of the Carrot to red
+    Carrot.vegCol = "Red"
+    console.log(Carrot.vegCol)
+
+
+
+
+
+
+
+</script>
