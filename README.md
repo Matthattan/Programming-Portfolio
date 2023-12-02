@@ -245,3 +245,9 @@ Jumping the gun on this one
 - Classes
   - Creating Objects with Classes
   - Getters and Setters
+
+## December - Python
+
+**2/12**
+- Madlib 1
+  - This time taking a different approach with classes and list comprehension
