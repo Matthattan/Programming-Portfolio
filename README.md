@@ -251,3 +251,7 @@ Jumping the gun on this one
 **2/12**
 - Madlib 1
   - This time taking a different approach with classes and list comprehension
+
+**3/12**
+- Madlib 2
+  - For some reason using list comprehension for the nouns doesn't work like verbs so I put everything in the verb array. Looking ugly but advancements are being made
