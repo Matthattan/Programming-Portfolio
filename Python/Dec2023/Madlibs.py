@@ -1,9 +1,8 @@
 # Approach madlibs using classes
 
 class Madlib:
-    def __init__(self, story, nouns, nounAmount, verbs, verbAmount, adjectives, adjAmount):
+    def __init__(self, nouns=None, nounAmount=None, verbs=None, verbAmount=None, adjectives=None, adjAmount=None):
         # The story will be stored as a string whilst the other words are compiled in a list for easy storage/access as well as implementation to the story
-        self.story: str = story,
         self.nouns: list = nouns,
         self.nounAmount: int = nounAmount,
         self.verbs: list = verbs,
@@ -13,9 +12,15 @@ class Madlib:
 
     def createMadlib(self):
         # Add the words to the story property
+        self.verbAmount = self.verbAmount
 
-        self.nouns = [input("Input Nouns") for _ in range(self.nounAmount)]
+        self.verbs = [input("Input Verbs") for _ in range(self.verbAmount)]
+        
+        print(self.optMadlib())
+    
+    def optMadlib(self):
+        return f'I {self.verbs[0]} to the Beach with my {self.verbs[1]}'
         
 
-Beach = Madlib(story="I went to the shop", nouns=None, nounAmount=1, verbs=None, verbAmount=None, adjectives=None, adjAmount=None)
+Beach = Madlib([], 1, [], 2)
 Beach.createMadlib()
