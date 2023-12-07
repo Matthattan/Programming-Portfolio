@@ -255,3 +255,8 @@ Jumping the gun on this one
 **3/12**
 - Madlib 2
   - For some reason using list comprehension for the nouns doesn't work like verbs so I put everything in the verb array. Looking ugly but advancements are being made
+
+**7/12**
+- Madlib 3
+  - Found the issue with using list comprehension and fixed it somehow.
+  - Got the basic function of receiving inputs for the story and outputting them with context but now I need to may it more dynamic
