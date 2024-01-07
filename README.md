@@ -260,3 +260,7 @@ Jumping the gun on this one
 - Madlib 3
   - Found the issue with using list comprehension and fixed it somehow.
   - Got the basic function of receiving inputs for the story and outputting them with context but now I need to may it more dynamic
+
+**26/12**
+- Autoclicker
+  - Made for a game that I wanted to automate playing
