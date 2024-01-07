@@ -264,3 +264,13 @@ Jumping the gun on this one
 **26/12**
 - Autoclicker
   - Made for a game that I wanted to automate playing
+
+## January - Python
+
+**7/12**
+- OOP 1
+  - Initializing values
+  - Assert
+  - Self keyword
+  - Attributes
+  - Instances
