@@ -260,3 +260,13 @@ Jumping the gun on this one
 - Madlib 3
   - Found the issue with using list comprehension and fixed it somehow.
   - Got the basic function of receiving inputs for the story and outputting them with context but now I need to may it more dynamic
+
+## January - Python
+
+**7/12**
+- OOP 1
+  - Initializing values
+  - Assert
+  - Self keyword
+  - Attributes
+  - Instances
