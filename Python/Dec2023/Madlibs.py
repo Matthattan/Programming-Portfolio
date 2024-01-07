@@ -1,9 +1,10 @@
 # Approach madlibs using classes
 
 class Madlib:
-    def __init__(self, nouns=None, nounAmount=None, verbs=None, verbAmount=None, adjectives=None, adjAmount=None):
+    def __init__(self, story, nouns=None, nounAmount=None, verbs=None, verbAmount=None, adjectives=None, adjAmount=None):
         # The story will be stored as a string whilst the other words are compiled in a list for easy storage/access as well as implementation to the story
         # commas have been intentoonally missed out since it throws an error otherwise (???)
+        self.story = story
         self.nouns: list = nouns,
         self.nounAmount: int = nounAmount
         self.verbs: list = verbs,
@@ -20,7 +21,7 @@ class Madlib:
         self.optMadlib()
     
     def optMadlib(self):
-        print("I {} to the {} with my {} so I could {} my {} {}".format(self.verbs[0], self.nouns[0], self.nouns[1], self.verbs[1], self.adjectives[0], self.nouns[2]))
+        print(self.story, format(self.verbs[0], self.nouns[0], self.nouns[1], self.verbs[1], self.adjectives[0], self.nouns[2]))
 
-Beach = Madlib([], 3, [], 2, [], 1)
+Beach = Madlib("I {} to the {} with my {} so I could {} my {} {}", [], 3, [], 2, [], 1)
 Beach.createMadlib()
