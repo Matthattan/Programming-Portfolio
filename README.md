@@ -274,3 +274,9 @@ Jumping the gun on this one
   - Self keyword
   - Attributes
   - Instances
+
+**09/01**
+- OOP 2
+  - repr dunder
+  - inheritance with super
+  
