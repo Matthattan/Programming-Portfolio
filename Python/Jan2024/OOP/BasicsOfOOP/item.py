@@ -1,7 +1,5 @@
 import csv 
 
-# create a template for objects (a class)
-
 class Item:
     # __init__ initialises the properties in the class
     # see also - magic methods
@@ -16,7 +14,7 @@ class Item:
         assert price >= 0, f"Price {price} is not greater than 0"
         assert quantity >= 0, f"Quantity {quantity} is not greater than 0"
 
-        self.name = name
+        self.__name = name # double underscore makes the attribute private
         self.price = price
         self.quantity = quantity
 
@@ -24,6 +22,15 @@ class Item:
         Item.all.append(self)
 
         print(f"an Instance called {self.name} has been created")
+
+    # get name
+    @property
+    def name(self):
+        return self.__name
+    # set name
+    @name.setter
+    def name(self, value):
+        self.__name = value
 
     # Python calls self which is the object that the method is acting from
     def calculate_total_price(self): 
@@ -36,7 +43,7 @@ class Item:
     @classmethod
     def instantiate_from_csv(cls):
         # read content as a list of dictionaries
-        with open('Programming-Portfolio\Python\Jan2024\OOP\items.csv', 'r') as f:
+        with open('Programming-Portfolio\Python\Jan2024\OOP\BasicsOfOOP\items.csv', 'r') as f:
             reader = csv.DictReader(f)
             items = list(reader)
 
@@ -61,55 +68,6 @@ class Item:
         return f"{self.__class__.__name__} {self.name}: £{self.price}"
         # without this, it would output the data address of the instance
 
-# creating a sub class (child class) from the Item class
-class Phone(Item):
-    all = []
-    def __init__(self, name: str, price: float, quantity:int = 0, broken_phones: int = 0 ):
-        # we can use super to inherit values from the parent class
-        super().__init__(
-            name, price, quantity
-        )
-        # assert is used to check if what is happening matches with what is expected (like an if statement)
-        # Run validations to the received arguments
-        assert price >= 0, f"Price {price} is not greater than 0"
-        assert quantity >= 0, f"Quantity {quantity} is not greater than 0"
-        assert broken_phones >= 0, f"Broken Phones {broken_phones} is not greater or equal to "
-
-        self.name = name
-        self.price = price
-        self.quantity = quantity
-        self.broken_phones = broken_phones
-
-        # Actions to execute 
-        Phone.all.append(self)
-
-        print(f"an Instance called {self.name} has been created")
-
-item1 = Item("HP Laptop", 900, 2) 
-item2 = Item("Mitsubishi", 100, 5)
-item3 = Item("Mac", 750, 3)
-item4 = Item("Hotpoint", 2000, 1)
-item5 = Item("Dell", 250, 4)
-print(type(item1)) # Returns <class "__main__.Item">
-
-print(item1.pay_rate) # pay rate has not been defined in the __init__ method so the the variable is searched for one level up (class level)
-
-print(Item.__dict__) # prints all attributes on class level
-print(item1.__dict__) # prints all attributes on instance level
-
-item1.pay_rate = 0.7  # overwrite the pay rate
-print(item1.apply_discount())
-
-Item.instantiate_from_csv()
-print(Item.all)
-
-print(Item.is_integer(7.05))
-
-phone1 = Phone("iPhone10", 500, 4)
-phone1.broken_phones = 1
-phone2 = Phone("SamsungS10", 600, 3)
-phone1.broken_phones = 1
-
-print(phone1.calculate_total_price())
-
-print(Phone.all)
+    @property
+    def read_only_name(self):
+        return "AAA"

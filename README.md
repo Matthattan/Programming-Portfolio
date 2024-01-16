@@ -279,4 +279,7 @@ Jumping the gun on this one
 - OOP 2
   - repr dunder
   - inheritance with super
-  
+
+**16/01**
+- OOP 3
+  - Getters and Setters
