@@ -21,12 +21,12 @@ class Character:
 # create a sub class for the Hero
 
 class Hero(Character):
-    def __init__(self, name: str, health: int):
+    def __init__(self, name: str, health: int, inventory: list):
         super().__init__(name=name, health=health)
 
         self.default_weapon = self.weapon
         self.health_bar = HealthBar(self, colour="red")
-
+        self.inventory = []
 
     def equip(self, weapon):
         self.weapon = weapon
@@ -35,12 +35,17 @@ class Hero(Character):
     def drop(self):
         self.weapon = self.default_weapon
         print(f"{self.name} dropped {self.weapon.name}")
+    
+    def store(self):
+        self.inventory.append(self.weapon)
+        print(f"{self.weapon} has been stored in {self.name}'s inventory")
+        self.weapon = self.default_weapon
 
+    def viewInv(self):
+        print(f"{self.inventory}")
 
 class Enemy(Character):
     def __init__(self, name: str, health: int, weapon):
         super().__init__(name=name, health=health)
         self.weapon = weapon
         self.health_bar = HealthBar(self, colour="blue")
-
-    
