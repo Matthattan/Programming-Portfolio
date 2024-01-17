@@ -283,3 +283,11 @@ Jumping the gun on this one
 **16/01**
 - OOP 3
   - Getters and Setters
+- Text Based Adventure
+  - characters
+  - weapons
+  - health 1/2
+
+**17/01**
+- Text Based Adventure
+  - health 2/2
