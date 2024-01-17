@@ -7,6 +7,6 @@ class Weapon:
         self.value = value
     
 
-iron_sword = Weapon(name="Iron Sword", weapon_type="melee", damage=5, value=10)
+iron_sword = Weapon(name="Iron Sword", weapon_type="melee", damage=15, value=10)
 short_bow = Weapon(name="Short Bow", weapon_type="ranged", damage=5, value=8)
 fists = Weapon(name="Fists", weapon_type="melee", damage=2, value=0)
