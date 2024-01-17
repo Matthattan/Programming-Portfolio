@@ -32,9 +32,10 @@ class HealthBar:
     def draw(self):
         remaining_bars = round(self.current_value / self.max_value * self.length)
         lost_bars = self.length - remaining_bars
-        print(f"""{self.barrier}
-              {self.colour if self.is_coloured else ''}
-              {remaining_bars * self.symbol_remaining}
-              {lost_bars * self.symbol_lost}
-              {self.colours["default"] if self.is_coloured else ''}
-              {self.barrier}""")
+        print(f"{self.entity.name}")
+        print(f"{self.barrier}"
+              f"{self.colour if self.is_coloured else ''}"
+              f"{remaining_bars * self.symbol_remaining}"
+              f"{lost_bars * self.symbol_lost}"
+              f"{self.colours['default'] if self.is_coloured else ''}"
+              f"{self.barrier}")
