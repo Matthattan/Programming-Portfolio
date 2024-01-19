@@ -71,29 +71,33 @@ class Game:
 
             # access inventory
             elif action == "2":
-                hero.viewInv()
 
+                # Allow player to look at each ind. item
                 while True:
+                    hero.viewInv()
                     action = input("Input Index (Starting from 1) to look at an item - use e to exit \n")
 
                     if action == "e":
                         break
 
                     try:
+                        # turn index into item
                         selectedItem  = hero.inventory[int(action)-1]
                         print(selectedItem)
 
                         while True:
+                            # interact with item
                             action = input("What would you like to do with the item? \n"
-                                           "1 - View Description"
-                                           "2 - Use Item"
-                                           "3 - Sell Item"
-                                           "q - Exit")
+                                           "1 - View Description \n"
+                                           "2 - Use Item \n"
+                                           "3 - Sell  \n"
+                                           "q - Exit \n")
                             
                             if action == "1":
                                 print(selectedItem)
                             
                             if action == "2":
+                                # check if item is Med or Weapon
                                 if type(selectedItem) is Medicine:
                                     hero.health += selectedItem.hpRecover
 
@@ -101,18 +105,21 @@ class Game:
                                         hero.health = hero.health_max
 
                                 elif type(selectedItem) is Weapon:
-                                    print("This is a Weapon")
-                                
+                                        hero.equip(selectedItem)
                                 else:
                                     print("error")
+
+                                break
                             
                             if action == "3":
-                                action = input(f"Sell {selectedItem.name} for {selectedItem.value} coins?")
+                        
+                                action = input(f"Sell {selectedItem.name} for {selectedItem.value} coins? Y/N \n")
 
-                                if action == "Y":
+                                if action.upper() == "Y":
                                     hero.coins += selectedItem.value
                                     hero.inventory.remove(selectedItem)
-                                elif action == "N":
+                                    break
+                                elif action.upper() == "N":
                                     continue
 
                             if action == "q":

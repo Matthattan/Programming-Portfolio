@@ -32,6 +32,7 @@ class Medicine(Item):
     
     def __repr__(self):
         return super().__repr__()
+    
 # Medicines
 smallMed = Medicine(name="Small Med", weapon_type="support", hpRecover=5, value=10,desc="Those over-the-counter presecriptions that have been modified to regain health.")
 mediumMed = Medicine(name="Medium Med", weapon_type="support", hpRecover=20, value=20, desc="For those times when you aren't that guy.")
