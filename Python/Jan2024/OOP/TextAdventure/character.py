@@ -1,4 +1,4 @@
-from weapon import fists
+from item import fists
 from health_bar import HealthBar
 
 # create a character
