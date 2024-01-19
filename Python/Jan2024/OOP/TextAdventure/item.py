@@ -4,6 +4,9 @@ class Item:
         self.weapon_type = weapon_type
         self.value = value
         self.desc = desc
+    
+    def __repr__(self):
+        return f"{self.name}"
 
 # create a weapon for characters to use
 class Weapon(Item):
@@ -15,16 +18,20 @@ class Weapon(Item):
     def __str__(self):
         return f"{self.name}: {self.weapon_type} weapon that deals {self.damage} damage and is worth {self.value} gold. {self.desc}"
 
+    def __repr__(self):
+        return super().__repr__()
 
 class Medicine(Item):
-    def __init__(self, name: str, weapon_type: str, value: int, desc: str, hpRecover):
+    def __init__(self, name: str, weapon_type: str, value: int, desc: str, hpRecover: int):
         super().__init__(name=name, weapon_type=weapon_type, value=value, desc=desc)
 
         self.hpRecover = hpRecover
     
     def __str__(self):
         return f"{self.name}: {self.weapon_type} Medicine that heals {self.hpRecover} health and is worth {self.value} gold. {self.desc}"
-
+    
+    def __repr__(self):
+        return super().__repr__()
 # Medicines
 smallMed = Medicine(name="Small Med", weapon_type="support", hpRecover=5, value=10,desc="Those over-the-counter presecriptions that have been modified to regain health.")
 mediumMed = Medicine(name="Medium Med", weapon_type="support", hpRecover=20, value=20, desc="For those times when you aren't that guy.")
