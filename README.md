@@ -291,3 +291,12 @@ Jumping the gun on this one
 **17/01**
 - Text Based Adventure
   - health 2/2
+
+## February - None
+# March 
+**02/03**
+- VUE
+  - Binding data
+  - Events
+- Git
+  - VS Terminal
